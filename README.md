@@ -1,20 +1,16 @@
 # wasm_component_demo
 WebAssembly Component Example for Codebeam 2024
 
-## Installation
+## Running it
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `wasm_component_demo` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:wasm_component_demo, "~> 0.1.0"}
-  ]
-end
+```
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/wasm_component_demo>.
-
+```
+iex> comp = TodoList.load_component()
+iex(2)> list = TodoList.init(comp)
+["Hello", "WASM Components"]
+iex(3)> list = TodoList.add_todo(comp, "hi", list)
+["hi", "Hello", "WASM Components"]
+```
