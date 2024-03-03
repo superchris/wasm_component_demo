@@ -1,0 +1,15 @@
+[package]
+name = "addperson"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "addperson"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.80"
+rustler = "0.31.0"
+wasmtime = "18.0.2"
