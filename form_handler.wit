@@ -1,0 +1,10 @@
+package local:people;
+
+record person {
+  name: string,
+  email: string
+}
+
+world people {
+  export get-name(person: person) -> string;
+}

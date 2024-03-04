@@ -1,0 +1,15 @@
+{
+  "name": "codebeam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "jco componentize todo-list.js --wit ../todo-list.wit -n todo-list -o ../todo-list.wasm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bytecodealliance/componentize-js": "^0.7.1"
+  }
+}

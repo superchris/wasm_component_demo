@@ -1,5 +1,5 @@
 defmodule TodoList do
-  use Rustler, otp_app: :wasm_component_demo, crate: "addperson"
+  use Rustler, otp_app: :wasm_component_demo, crate: "todo_list"
 
   # When your NIF is loaded, it will override this function.
   def init(serialized_component), do: error()
